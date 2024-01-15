@@ -8,10 +8,10 @@ function findElementInArray(array $array, string $element) {
         if($element === $value){
             return $key;
         }
-        else{
-            return -1;
-        }
+
     }
+    return -1;
+
 }
 
 echo findElementInArray($array, 'bar') . " = 1\n";
