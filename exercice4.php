@@ -46,20 +46,20 @@ function getMin(array $array) {
 $array = [5, 2, 8, 1, 11, 7, 3, 4];
 
 function sortByAscending(array $array) {
-    // code here
+
     $newArray = [];
     $copieArray = $array;
-
-    foreach ($array as $value){
+    while($copieArray != []){
         $min = getMin($copieArray);
         $newArray[] = $min;
         $copieArray = removeAnElement($copieArray, $min);
     }
-    return $newArray ;
+    return $newArray;
 
 
 
 }
+
 print_r(sortByAscending([2,1]));
 
 // Assert: [1, 2, 3, 4, 5, 7, 8, 11];
